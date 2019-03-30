@@ -8,7 +8,7 @@ module "vm" {
   name            = "wg-image_${random_id.vm_suffix.hex}"
   region          = "us-east"
   type            = "g6-standard-1"
-  algo_repo       = "${var.deploy_repo}"
+  deploy_repo     = "${var.deploy_repo}"
   source_image_id = "linode/ubuntu18.10"
   ssh_keys        = ["${var.ssh_keys}"]
 }
