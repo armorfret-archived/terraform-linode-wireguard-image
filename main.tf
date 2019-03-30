@@ -9,7 +9,7 @@ module "vm" {
   region          = "us-east"
   type            = "g6-standard-1"
   deploy_repo     = "${var.deploy_repo}"
-  source_image_id = "linode/ubuntu18.10"
+  source_image_id = "linode/ubuntu18.04"
   ssh_keys        = ["${var.ssh_keys}"]
 }
 
