@@ -4,7 +4,7 @@ resource "random_id" "vm_suffix" {
 
 module "vm" {
   source          = "armorfret/wireguard-base/linode"
-  version         = "0.0.5"
+  version         = "0.0.6"
   name            = "wg-image_${random_id.vm_suffix.hex}"
   region          = "us-east"
   type            = "g6-standard-1"
